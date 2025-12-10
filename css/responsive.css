@@ -1,0 +1,63 @@
+/* Responsive Adjustments */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hero */
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Sections */
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-info {
+        margin-top: 30px;
+    }
+
+    /* Reveal Reset for easier mobile debugging if needed, or keep animations */
+}
+
+@media (max-width: 480px) {
+    h2.section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
