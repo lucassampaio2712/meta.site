@@ -9,27 +9,24 @@
 
     <title>META Inteligência Empresarial | Contabilidade e Consultoria</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header id="main-header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="assets/images/logo-meta.png" alt="META Inteligência Empresarial">
+                <img src="logo-meta.png" alt="META Inteligência Empresarial">
             </a>
             <nav class="desktop-nav">
                 <ul>
@@ -44,7 +41,6 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <!-- Mobile Nav Overlay -->
         <div class="mobile-nav-overlay">
             <div class="mobile-nav-close"><i class="fas fa-times"></i></div>
             <ul>
@@ -57,50 +53,42 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Hero Section (Video Carousel) -->
         <section id="home" class="hero-section">
             <div class="swiper hero-slider">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1: Rio -->
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline class="hero-video">
-                            <source src="assets/videos/video-rio.mp4" type="video/mp4">
+                            <source src="video-rio.mp4" type="video/mp4">
                         </video>
                         <div class="overlay"></div>
                     </div>
-                    <!-- Slide 2: SP 1 -->
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline class="hero-video">
-                            <source src="assets/videos/video-sp-1.mp4" type="video/mp4">
+                            <source src="video-sp-1.mp4" type="video/mp4">
                         </video>
                         <div class="overlay"></div>
                     </div>
-                    <!-- Slide 3: SP 2 -->
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline class="hero-video">
-                            <source src="assets/videos/video-sp-2.mp4" type="video/mp4">
+                            <source src="video-sp-2.mp4" type="video/mp4">
                         </video>
                         <div class="overlay"></div>
                     </div>
-                    <!-- Slide 4: Rio 2 -->
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline class="hero-video">
-                            <source src="assets/videos/video-rio-2.mp4" type="video/mp4">
+                            <source src="video-rio-2.mp4" type="video/mp4">
                         </video>
                         <div class="overlay"></div>
                     </div>
                 </div>
-                <!-- Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
 
-            <!-- Hero Content Layer -->
             <div class="hero-content">
                 <div class="container text-center">
-                    <img src="assets/images/logo-meta.png" alt="META Logo" class="hero-logo">
+                    <img src="logo-meta.png" alt="META Logo" class="hero-logo">
                     <h1>Decisões baseadas em dados:<br>da complexidade à clareza que impulsiona o seu
                         negócio.</h1>
                     <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços</a>
@@ -111,7 +99,6 @@
             </div>
         </section>
 
-        <!-- Sobre a META -->
         <section id="sobre" class="section-padding bg-light">
             <div class="container">
                 <div class="row align-items-center">
@@ -136,12 +123,10 @@
             </div>
         </section>
 
-        <!-- Áreas de Atuação -->
         <section id="atuacao" class="section-padding bg-white">
             <div class="container">
                 <h2 class="section-title text-center mb-5 reveal-up">Nossas Áreas de Atuação</h2>
                 <div class="grid-cards">
-                    <!-- Card 1 -->
                     <div class="card reveal-up delay-100">
                         <div class="card-icon"><i class="fas fa-calculator"></i></div>
                         <h3>Gestão Tributária</h3>
@@ -149,19 +134,16 @@
                             inteligente, aproveitando corretamente benefícios, regimes e créditos permitidos pela
                             legislação.</p>
                     </div>
-                    <!-- Card 2 -->
                     <div class="card reveal-up delay-200">
                         <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
                         <h3>Proteção Patrimonial</h3>
                         <p>Estruturas jurídicas e contábeis direcionadas ao resguardo de bens.</p>
                     </div>
-                    <!-- Card 3 -->
                     <div class="card reveal-up delay-300">
                         <div class="card-icon"><i class="fas fa-chart-line"></i></div>
                         <h3>Análise de Investimento e Endividamento</h3>
                         <p>Apoiando decisões financeiras estratégicas para empresas e indivíduos.</p>
                     </div>
-                    <!-- Card 4 -->
                     <div class="card reveal-up delay-400">
                         <div class="card-icon"><i class="fas fa-users"></i></div>
                         <h3>Configuração Societária</h3>
@@ -171,7 +153,6 @@
             </div>
         </section>
 
-        <!-- Serviços -->
         <section id="servicos" class="section-padding bg-dark text-white">
             <div class="container">
                 <h2 class="section-title text-center mb-5 reveal-up">Serviços e Diferenciais</h2>
@@ -204,12 +185,10 @@
             </div>
         </section>
 
-        <!-- Credenciais -->
         <section id="credenciais" class="section-padding bg-light">
             <div class="container text-center">
                 <h2 class="section-title mb-5 reveal-up">Credenciais e Certificações</h2>
                 <div class="credentials-row reveal-up">
-                    <!-- Placeholders for credential logos -->
                     <div class="credential-badge">PQEC</div>
                     <div class="credential-badge">ISO</div>
                     <div class="credential-badge">PQO</div>
@@ -219,12 +198,10 @@
             </div>
         </section>
 
-        <!-- Responsável Técnico -->
         <section id="tecnico" class="section-padding bg-white">
             <div class="container">
                 <div class="tech-card center-card reveal-up">
                     <div class="tech-photo">
-                        <!-- Placeholder for photo -->
                         <i class="fas fa-user-tie fa-4x"></i>
                     </div>
                     <div class="tech-info text-center">
@@ -236,12 +213,10 @@
             </div>
         </section>
 
-        <!-- Contato e Localização -->
         <section id="contato" class="section-padding bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-4 reveal-left">
-                        <!-- Google Maps Placeholder/Iframe -->
                         <div class="map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2933189912555!2d-43.172896!3d-22.906847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjYiUyA0M8KwMTAnMjIuNCJX!5e0!3m2!1sen!2sbr!4v1620000000000!5m2!1sen!2sbr"
@@ -279,12 +254,11 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <img src="assets/images/logo-meta.png" alt="META" class="footer-logo">
+                    <img src="logo-meta.png" alt="META" class="footer-logo">
                 </div>
                 <div class="col-md-4 mb-4">
                     <h4>Links Rápidos</h4>
@@ -304,15 +278,14 @@
                 </div>
             </div>
             <div class="footer-bottom text-center">
-                <p>&copy; 2024 META Inteligência Empresarial. Todos os direitos reservados.</p>
+                <p>© 2024 META Inteligência Empresarial. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/main.js"></script>
+    <script src="carousel.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
