@@ -129,13 +129,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* --- ALTERAÇÃO 1: Aumentar a primeira "image.png" (Logo no cabeçalho) --- */
 .logo img {
-    height: 60px; /* Aumentado de 40px para 60px */
+    height: 60px; /* Logo no cabeçalho */
     width: auto;
     display: block;
 }
-/* ------------------------------------------------------------------------- */
 
 .desktop-nav ul {
     list-style: none;
@@ -180,14 +178,14 @@ body {
 }
 
 .mobile-menu-btn {
-    display: none;
+    display: none; /* Controlado via JS em responsive.css */
     font-size: 24px;
     cursor: pointer;
     color: #fff;
 }
 
 .mobile-nav-overlay {
-    display: none; /* Controlado via JS em responsive.css */
+    display: none; 
 }
 
 /* SEÇÃO HERO (BANNER/HOME) */
@@ -240,19 +238,17 @@ body {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Correção de text-shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
-/* --- ALTERAÇÃO 3: Centralizar o Modelo 3D (hero-logo) --- */
 model-viewer {
     width: 250px;
     height: 250px;
-    margin: 0 auto 20px auto; /* Adicionado 'auto' nas laterais para centralizar */
-    display: block; /* Garante que 'auto' funcione corretamente */
+    margin: 0 auto 20px auto; /* Centralização do Modelo 3D */
+    display: block; 
     --poster-color: transparent;
     border: none;
 }
-/* ------------------------------------------------------------------------- */
 
 /* BOTÕES */
 .btn {
@@ -357,7 +353,10 @@ model-viewer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 5px solid var(--primary-color);
+    
+    /* --- ALTERAÇÃO 1: Altera a cor do card superior para preto --- */
+    border-top: 5px solid var(--dark-color);
+    /* ----------------------------------------------------------- */
 }
 
 .card:hover {
@@ -517,14 +516,14 @@ model-viewer {
     padding: 50px 0 20px 0;
 }
 
-/* --- ALTERAÇÃO 2: Aumentar a segunda "imagem.png" (Logo no rodapé) --- */
+/* --- ALTERAÇÃO 3: Aumentar o logo do rodapé para 900px --- */
 .footer-logo {
-    height: 80px; /* Aumentado de 50px para 80px */
+    height: 900px; /* Aumentado drasticamente conforme solicitado */
     width: auto;
-    filter: brightness(0) invert(1); /* Mantém a cor original no escuro */
+    filter: brightness(0) invert(1); 
     margin-bottom: 15px;
 }
-/* ------------------------------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 .main-footer h4 {
     font-family: var(--font-heading);
@@ -532,6 +531,20 @@ model-viewer {
     margin-bottom: 20px;
     color: var(--primary-color);
 }
+
+/* --- ALTERAÇÃO 2: Esconder a aba "Links Rápidos" --- */
+/* Esta regra oculta a coluna inteira do rodapé que contém "Links Rápidos" */
+.main-footer .col-md-4:nth-child(2) {
+    display: none;
+}
+/* Para que as outras duas colunas ocupem o espaço corretamente no desktop,
+   é necessário ajustar os tamanhos de coluna no HTML, mas faremos o ajuste 
+   de layout básico aqui:
+*/
+.main-footer .row {
+    justify-content: space-around;
+}
+/* --------------------------------------------------- */
 
 .footer-links {
     list-style: none;
