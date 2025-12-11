@@ -22,44 +22,14 @@
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/1.12.0/model-viewer.min.js"></script>
 
-    <style>
-        /* Estilo para o modelo 3D no Hero */
-        .hero-logo-3d {
-            width: 300px; /* Ajuste conforme o tamanho desejado */
-            height: 100px; /* Ajuste conforme o tamanho desejado */
-            display: block;
-            margin: 0 auto 20px auto;
-            border: none;
-            /* Adicione estilos de sombra se desejar */
-        }
-        /* Estilo para o modelo 3D no Header (menu) */
-        .header-logo-3d {
-            width: 120px;
-            height: 40px;
-            display: block;
-        }
-        /* Estilo para o modelo 3D no Footer */
-        .footer-logo-3d {
-            width: 150px;
-            height: 50px;
-            display: block;
-        }
-    </style>
-</head>
+    </head>
 
 <body>
 
     <header id="main-header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <model-viewer
-                    src="metal letters 3d model.glb"
-                    alt="META Inteligência Empresarial Logo 3D"
-                    class="header-logo-3d"
-                    shadow-intensity="1"
-                    camera-controls
-                    auto-rotate
-                ></model-viewer>
+                <img src="image.png" alt="META Inteligência Empresarial">
             </a>
             <nav class="desktop-nav">
                 <ul>
@@ -124,7 +94,7 @@
                     <model-viewer
                         src="metal letters 3d model.glb"
                         alt="META Logo 3D Prata Metálico"
-                        class="hero-logo-3d"
+                        class="hero-logo"
                         shadow-intensity="1"
                         camera-controls
                         auto-rotate
@@ -300,13 +270,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <model-viewer
-                        src="metal letters 3d model.glb"
-                        alt="META Logo 3D Prata Metálico"
-                        class="footer-logo-3d"
-                        auto-rotate
-                        camera-controls
-                    ></model-viewer>
+                    <img src="image.png" alt="META" class="footer-logo">
                 </div>
                 <div class="col-md-4 mb-4">
                     <h4>Links Rápidos</h4>
