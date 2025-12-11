@@ -276,10 +276,11 @@ img {
 }
 
 .hero-logo {
-    /* Define o tamanho para o modelo 3D (e funciona para a imagem) */
-    width: 300px; 
-    height: 100px; /* Ajuste conforme a proporção do seu modelo */
-    margin: 0 auto 20px auto;
+    /* Define o tamanho do visualizador 3D */
+    width: 300px; /* Exemplo: ajuste a largura */
+    height: 100px; /* Exemplo: ajuste a altura */
+    display: block; /* Essencial para que as margens automáticas funcionem */
+    margin: 0 auto 20px auto; /* Centraliza horizontalmente e adiciona margem inferior */
     border: none;
 }
 /* Se precisar de mais ajustes específicos para o modelo 3D */
