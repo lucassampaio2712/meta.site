@@ -556,9 +556,9 @@ img {
 
     /* Define o tamanho do visualizador 3D */
 
-    width: 600px; /* Exemplo: ajuste a largura */
+    width: 900px; /* Exemplo: ajuste a largura */
 
-    height: 200px; /* Exemplo: ajuste a altura */
+    height: 300px; /* Exemplo: ajuste a altura */
 
     display: block; /* Essencial para que as margens automáticas funcionem */
 
