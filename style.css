@@ -117,7 +117,21 @@ img {
 
 
 /* Utility Classes */
+/* No seu arquivo style.css (ou responsive.css) */
 
+/* Primeiro, confirme a altura do seu cabeçalho fixo (#main-header). 
+   Use esse valor para o scroll-margin-top. Exemplo: 80px.
+*/
+
+#sobre, 
+#atuacao, 
+#servicos, 
+#credenciais, 
+#tecnico, 
+#contato {
+    scroll-margin-top: 80px; 
+    /* Ajuste 80px para a altura exata do seu cabeçalho */
+}
 .container {
 
     width: 90%;
