@@ -146,11 +146,11 @@ img {
     align-items: center;
 }
 
+/* ⬅️ AQUI: DEFININDO O TAMANHO PADRÃO DO PNG NO HEADER (Logo) */
 .logo img {
-    height: 70px;
-    /* Adjust based on actual logo */
+    height: 70px; /* Mantém o tamanho original do PNG no cabeçalho */
+    max-width: 150px; /* Limite opcional */
 }
-
 .desktop-nav ul {
     display: flex;
     gap: 30px;
@@ -275,19 +275,18 @@ img {
     color: #fff;
 }
 
+/* ✅ AQUI: AUMENTANDO O TAMANHO DO MODELO 3D (hero-logo) */
 .hero-logo {
-    /* Define o tamanho do visualizador 3D */
-    width: 300px; /* Exemplo: ajuste a largura */
-    height: 100px; /* Exemplo: ajuste a altura */
-    display: block; /* Essencial para que as margens automáticas funcionem */
-    margin: 0 auto 20px auto; /* Centraliza horizontalmente e adiciona margem inferior */
-    border: none;
+    /* AUMENTADO O TAMANHO para o modelo 3D */
+    width: 400px; /* Exemplo: Aumento da largura */
+    height: 150px; /* Exemplo: Aumento da altura */
+    display: block;
+    margin: 0 auto 20px auto;
+    border: none;
 }
 /* Se precisar de mais ajustes específicos para o modelo 3D */
 model-viewer.hero-logo {
-    /* Garante que o modelo 3D seja exibido corretamente */
-    display: block; 
-}
+    display: block;
 .hero-content h1 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -472,10 +471,11 @@ model-viewer.hero-logo {
     padding: 50px 0 20px;
 }
 
+/* ⬅️ AQUI: AJUSTANDO O TAMANHO DO PNG NO FOOTER */
 .footer-logo {
-    max-width: 150px;
-    filter: brightness(0) invert(1);
-    /* Make logo white if it's not transparent/white already */
+    max-width: 150px; /* Tamanho padrão do PNG no rodapé */
+    height: 70px; /* Definindo altura consistente para o PNG */
+    filter: brightness(0) invert(1);
 }
 
 .footer-links li {
