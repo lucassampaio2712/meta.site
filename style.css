@@ -518,8 +518,8 @@ model-viewer {
 
 /* --- ALTERAÇÃO 3: Aumentar o logo do rodapé para 900px --- */
 .footer-logo {
-    height: 100px; /* Aumentado drasticamente conforme solicitado */
-    width: auto;
+    height: 90px; /* Aumentado drasticamente conforme solicitado */
+    width: 30px;
     filter: brightness(0) invert(1); 
     margin-bottom: 15px;
 }
