@@ -353,10 +353,7 @@ model-viewer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    /* --- ALTERAÇÃO 1: Altera a cor do card superior para preto --- */
     border-top: 5px solid var(--dark-color);
-    /* ----------------------------------------------------------- */
 }
 
 .card:hover {
@@ -516,14 +513,14 @@ model-viewer {
     padding: 50px 0 20px 0;
 }
 
-/* --- ALTERAÇÃO 3: Aumentar o logo do rodapé para 900px --- */
+/* --- ALTERAÇÃO: Diminuir o logo do rodapé para 200px de altura e 200px de largura --- */
 .footer-logo {
-    height: 200px; /* Aumentado drasticamente conforme solicitado */
-    width: 200px;
+    height: 200px; /* Definido como 200px */
+    width: 200px; /* Definido como 200px */
     filter: brightness(0) invert(1); 
     margin-bottom: 15px;
 }
-/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
 .main-footer h4 {
     font-family: var(--font-heading);
@@ -532,19 +529,13 @@ model-viewer {
     color: var(--primary-color);
 }
 
-/* --- ALTERAÇÃO 2: Esconder a aba "Links Rápidos" --- */
-/* Esta regra oculta a coluna inteira do rodapé que contém "Links Rápidos" */
+/* Esconder a aba "Links Rápidos" */
 .main-footer .col-md-4:nth-child(2) {
     display: none;
 }
-/* Para que as outras duas colunas ocupem o espaço corretamente no desktop,
-   é necessário ajustar os tamanhos de coluna no HTML, mas faremos o ajuste 
-   de layout básico aqui:
-*/
 .main-footer .row {
     justify-content: space-around;
 }
-/* --------------------------------------------------- */
 
 .footer-links {
     list-style: none;
